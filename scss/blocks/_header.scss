@@ -1,0 +1,43 @@
+.header{
+    padding-top: 46px;
+    background-color: $main-bg;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+}
+.logo {
+    position: relative;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: var(--black);
+    padding-right: 12px;
+    padding-bottom: 4px;
+   
+}
+.logo::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 8px;
+    height: 8px;
+    background-color: $acsent;
+    border-radius: 50%;
+}
+
+.nav-list {
+    display: flex;
+    gap: 120px;
+    flex-wrap: 500;
+    font-size: 18px;
+}
+
+
+.nav-link.active{
+    color: $gray;
+}

@@ -1,0 +1,23 @@
+.services {
+    background-color: $white;
+    padding: 90px 0;
+}
+.services-list {
+    display: flex;
+    gap: 30px;
+}
+.services-card {
+    width: 370px;
+}
+
+.service-card-title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: $acsent;
+}
+.service-card-desc {
+    font-size: 14px;
+    line-height: 2;
+}
