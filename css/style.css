@@ -121,6 +121,11 @@ a:hover {
   padding-top: 46px;
   background-color: #F1F1F1;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 30px;
+  }
+}
 
 .header-nav {
   display: -webkit-box;
@@ -144,11 +149,9 @@ a:hover {
   padding-right: 12px;
   padding-bottom: 4px;
 }
-
 .logo:hover, .logo:focus {
   color: #111821;
 }
-
 .logo::after {
   content: "";
   display: block;
@@ -160,7 +163,6 @@ a:hover {
   background-color: #A5058E;
   border-radius: 50%;
 }
-
 .logo::before {
   position: absolute;
   left: 0;
@@ -173,23 +175,32 @@ a:hover {
   -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .logo:hover::before {
   width: 90%;
 }
 
 .nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 120px;
-  -ms-flex-wrap: 500;
-      flex-wrap: 500;
-  font-size: 18px;
+  display: none;
+}
+@media screen and (min-width: 375px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 120px;
+    -ms-flex-wrap: 500;
+        flex-wrap: 500;
+    font-size: 18px;
+  }
 }
 
 .mob-nav-btn {
-  display: none;
+  display: block;
+}
+@media screen and (min-width: 375px) {
+  .mob-nav-btn {
+    display: none;
+  }
 }
 
 .nav-link.active {
