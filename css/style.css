@@ -140,9 +140,13 @@ a:hover {
   font-weight: 700;
   font-size: 32px;
   line-height: 1;
-  color: var(--black);
+  color: #111821;
   padding-right: 12px;
   padding-bottom: 4px;
+}
+
+.logo:hover, .logo:focus {
+  color: #111821;
 }
 
 .logo::after {
@@ -157,6 +161,23 @@ a:hover {
   border-radius: 50%;
 }
 
+.logo::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #A5058E;
+  -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover::before {
+  width: 90%;
+}
+
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,6 +186,10 @@ a:hover {
   -ms-flex-wrap: 500;
       flex-wrap: 500;
   font-size: 18px;
+}
+
+.mob-nav-btn {
+  display: none;
 }
 
 .nav-link.active {
