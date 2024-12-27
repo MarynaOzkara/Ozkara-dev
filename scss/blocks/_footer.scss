@@ -44,3 +44,20 @@
 .sosial-link:focus > .sosial-icon {
     fill: $acsent;
 }
+.after-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid $main-bg;
+}
+.policy a{
+    font-size: 12px;
+    color: $gray;
+}
+.copy a{
+    font-size: 14px;
+    color: $gray;
+}
+.copy{
+    font-size: 14px;
+    color: $gray; 
+}
