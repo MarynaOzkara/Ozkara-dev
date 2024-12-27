@@ -8,7 +8,6 @@ body{
 }
 
 a {
-    cursor: pointer;
     color: $black;
     transition: color 0.2s ease-in;
 
@@ -16,14 +15,12 @@ a {
        color: $acsent;
     }
 }
-.container{
-
-    max-width: 1230px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 0 auto; 
-}
 .section-title {
     font-size: 34px;
     font-weight: 600;
+}
+.container{
+    width: 375px;
+    padding: 0 30px;
+    margin: 0 auto;
 }

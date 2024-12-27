@@ -1,29 +1,35 @@
-.hero-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    background-color: $main-bg;
+.hero-img-wrap{
+   display: grid;
+   place-items: center;
 }
-.hero-content {
-    margin-top: 124px;
-    max-width: 500px;
-    
+.hero-img {
+   
+    width: 296px;
+    height: 367px;   
 }
 .hero-title {
     font-weight: 600;
-    font-size: 44px;
+    font-size: 30px;
     margin-bottom: 20px;
-    color: $acsent;
-  
-   
+    color: $acsent;  
 }
 .hero-desc {
     line-height: 2;
 }
-
-.hero-img {
-    width: 494px;
-    height: 603px;
-
-    
+.hero-content{
+    margin-bottom: 20px;
 }
+// .hero-container {
+//     display: flex;
+//     justify-content: space-between;
+//     gap: 30px;
+//     background-color: $main-bg;
+// }
+// .hero-content {
+//     margin-top: 124px;
+//     max-width: 500px;
+    
+// }
+
+
+

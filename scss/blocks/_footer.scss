@@ -1,5 +1,5 @@
 .contacts {
-    padding: 90px 0;
+    padding: 60px 0;
     text-align: center;
     background-color: $white;
 }
@@ -8,15 +8,14 @@
     margin: 0 auto;
 }
 .contacts-title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
-
 .contacts-content {
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .contacts-btn {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 .message-btn {
     display: inline-block;
@@ -31,10 +30,12 @@
     color: $white;
 }
 .contacts-sosial {
+    max-width: 315px;
     display: flex;
-    gap: 42px;
+    // gap: 42px;
+    gap:calc((100% - 160px) / 4);
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .sosial-icon {
     fill: $gray;

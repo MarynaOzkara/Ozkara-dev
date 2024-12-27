@@ -1,1 +1,1 @@
-Aos.init();
+// Aos.init();
