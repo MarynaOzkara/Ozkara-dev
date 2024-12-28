@@ -27,3 +27,14 @@ a {
 .no_scroll{
     overflow: hidden;
   }
+
+  @include mediaTablet{
+    .container{
+        width: 768px;
+    }
+  }
+  @include mediaDesctop{
+    .container{
+        width: 1200px;
+    }
+  }

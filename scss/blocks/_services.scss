@@ -17,12 +17,31 @@
 .services-card:not(:last-child){
     margin-bottom: 60px;
 }
-// .services-list {
-//     display: flex;
-//     gap: 30px;
-// }
-// .services-card {
-//     width: 370px;
-// }
 
-
+@include mediaTablet{
+    .services-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .services-card{
+        text-align: center;
+        width: 370px;
+    }
+}
+@include mediaDesctop{
+    .services{
+        padding: 86px 0;
+    }
+    .services-list{
+        flex-direction: row;
+        gap: 30px;
+    }
+    .services-card{
+        text-align: left;
+    }
+    .services-card:not(:last-child){
+        margin-bottom: 0px;
+    }
+}

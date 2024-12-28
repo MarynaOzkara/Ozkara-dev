@@ -78,29 +78,30 @@
     z-index: 1;
 }
 
-
-
-// .nav-list {
-//     display: none;
-    
-
-//     @include mediaMobile{
-//         display: flex;
-//         gap: 120px;
-//         flex-wrap: 500;
-//         font-size: 18px;
-//     }
-
-// }
-
-// .mob-nav-btn{
-//     display: block;
-
-//     @include mediaMobile{
-//         display: none;
-//     }
-
-// }
-// .nav-link.active{
-//     color: $gray;
-// }
+@include mediaTablet{
+    .header{
+        padding-bottom: 60px;
+    }
+    .mob-nav-btn{
+        display: none;
+    }
+    .nav-list{
+        display: flex;
+        align-items:center;
+        gap: 60px;
+    }
+    .nav-link{
+        color: $black;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+@include mediaDesctop{
+    .header{
+        padding-top: 46px;
+        padding-bottom: 85px;
+    }
+    .nav-list{
+        gap: 100px;
+    }
+}
