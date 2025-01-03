@@ -10,10 +10,25 @@
     <header>
         <load src="partials/header.html"/>
     </header>
-    <main></main>
-    <footer>
+    <main>
+        <load src="partials/contacts.html"/>
+    </main>
+    <footer class="contacts">
         <load src="partials/footer.html"/>
     </footer>
- <script type="module" src="../js/main.js"></script> 
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz7_yvUxbk4PJZ3D2mxBsInQhmKVqdrRQUM0IMtHdFSFz2Msi2fCnKsGyqsQn5z3e1BTg/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+ <script type="module" src="../js/main.js"></script>
+ 
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 .hero-img-wrap{
    display: grid;
    place-items: center;
@@ -13,11 +14,13 @@
     line-height: 2;
 }
 .hero-content{
+    padding-top: 50px;
     margin-bottom: 20px;
 }
 
 @include mediaTablet{
     .hero-container{
+        padding-top: 60px;
         display: flex;
         justify-content: space-between;
         gap: 30px;
@@ -25,17 +28,19 @@
     .hero-content{
         max-width: 350px;
         margin-bottom: 0;
-        margin-top: 50px;
-
     }
     .hero-img-wrap{
         display: block;
     }
 }
 @include mediaDesctop{
+    .hero-container{
+        padding-top: 85px;
+    }
     .hero-content{
         max-width: 500px;
         margin-top: 115px;
+        padding-top: 0;
     }
     .hero-title{
         font-size: 44px;

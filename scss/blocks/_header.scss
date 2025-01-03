@@ -1,6 +1,6 @@
 .header{
     padding-top: 40px;
-    padding-bottom: 50px;
+    
 }
 .logo {
     position: relative;
@@ -79,9 +79,7 @@
 }
 
 @include mediaTablet{
-    .header{
-        padding-bottom: 60px;
-    }
+   
     .mob-nav-btn{
         display: none;
     }
@@ -99,7 +97,7 @@
 @include mediaDesctop{
     .header{
         padding-top: 46px;
-        padding-bottom: 85px;
+       
     }
     .nav-list{
         gap: 100px;
