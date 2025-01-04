@@ -120,6 +120,17 @@
     color: $black;
 }
 
+.animation-wrap{
+
+    position: relative;
+}
+.animation{
+    position: absolute;
+    top: 0;
+	overflow-x: hidden;
+	
+}
+
 @include mediaTablet{   
     .form{
         padding: 20px;

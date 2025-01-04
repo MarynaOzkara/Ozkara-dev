@@ -695,6 +695,16 @@ a:hover {
   color: #111821;
 }
 
+.animation-wrap {
+  position: relative;
+}
+
+.animation {
+  position: fixed;
+  overflow-x: hidden;
+  top: 0;
+}
+
 @media screen and (min-width: 768px) {
   .form {
     padding: 20px;
