@@ -66,6 +66,10 @@
 
 .nav-link{
     color: $gray;
+
+    &:hover, &:focus, &:active{
+        color: $acsent;
+    }
 }
 
 .header-nav {
