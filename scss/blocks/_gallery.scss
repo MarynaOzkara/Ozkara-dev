@@ -33,6 +33,10 @@
 }
 .portfolio-list-item {
     width: 100%;
+    border: 1px solid $acsent;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
 }
 .portfolio-list-item:not(:last-child){
     margin-bottom: 48px;
@@ -40,11 +44,27 @@
 .portfolio-list-link {
     display: block;
 }
+.overlay-wrap{
+    height: 250px;
+    overflow: hidden;
+    
+}
+.overlay-img{
+    object-fit: cover;
+    transform: translateY(0);
+    transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover{
+        transform: translateY(-60%);
+    }
+}
 .portfolio-list-wrap {
-    padding: 32px 16px;
-    border-bottom: 1px solid $black;
-    border-right: 1px solid $black;
-    border-left: 1px solid $black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: $acsent;
+    color: $white;
 }
 .portfolio-list-title {
     font-weight: 500;

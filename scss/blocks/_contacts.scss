@@ -1,11 +1,13 @@
 .contact{
     background-color: $main-bg;
     padding: 60px 0;
+    position: relative;
 }
 .contact-title{
     font-size: 28px;
     font-weight: 600;
 }
+
 .form{
     width: 100%;
     max-width: 600px;
@@ -131,7 +133,10 @@
 	
 }
 
-@include mediaTablet{   
+@include mediaTablet{ 
+    .contact{
+        padding: 70px 0;
+    }  
     .form{
         padding: 20px;
     }
@@ -139,6 +144,7 @@
 @include mediaDesctop{
     .contact{
         padding: 85px 0;
+
     }
     .form{
         padding: 30px;
