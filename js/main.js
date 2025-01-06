@@ -17,8 +17,6 @@ let currentLink = location.pathname;
 document.querySelectorAll(".nav-link").forEach((item) => {
   let linkHref = item.getAttribute("href");
   if (currentLink === linkHref) {
-    console.log(item);
     item.classList.add("active");
   }
-  console.log(item);
 });

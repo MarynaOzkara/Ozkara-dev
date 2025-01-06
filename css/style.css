@@ -142,6 +142,37 @@ a:hover {
   overflow: hidden;
 }
 
+.hide {
+  opacity: 1;
+  -webkit-animation-name: a1;
+          animation-name: a1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes a1 {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+
+@keyframes a1 {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
 .header {
   padding-top: 40px;
   z-index: 999;
@@ -748,6 +779,28 @@ a:hover {
   gap: 24px;
 }
 
+.filter-item {
+  cursor: pointer;
+  font-family: "Poppins", serif, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #111821;
+  border-radius: 10px;
+  padding: 8px 16px;
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter-item:hover, .filter-item:focus {
+  background-color: #A5058E;
+}
+
+.filter-item.choosen {
+  background-color: #A5058E;
+}
+
 .filter-btn {
   display: inline-block;
   font-family: "Poppins", serif, sans-serif;
@@ -852,7 +905,6 @@ a:hover {
 @media screen and (min-width: 768px) {
   .portfolio-filter {
     margin-bottom: 64px;
-    gap: 34px;
   }
   .portfolio-list {
     display: -webkit-box;
@@ -875,7 +927,6 @@ a:hover {
   }
   .portfolio-filter {
     margin-bottom: 72px;
-    gap: 44px;
   }
   .portfolio-list {
     gap: 48px 24px;

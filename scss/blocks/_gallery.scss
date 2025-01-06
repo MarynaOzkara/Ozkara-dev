@@ -9,7 +9,26 @@
     justify-content: start;
     gap: 24px;
 }
+.filter-item{
+    cursor: pointer;
+    font-family: $font-main, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: $white;
+    background-color: $black;
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover, &:focus{
+      background-color: $acsent;
+    }
+}
+.filter-item.choosen{
+    background-color: $acsent;
+}
 .filter-btn {
     display: inline-block;
     font-family: $font-main, sans-serif;
@@ -97,7 +116,6 @@
 @include mediaTablet{
     .portfolio-filter{
         margin-bottom: 64px;
-        gap: 34px;
     }
     .portfolio-list{
         display: flex;
@@ -118,7 +136,6 @@
     }
     .portfolio-filter{
         margin-bottom: 72px;
-        gap: 44px;
     }
     .portfolio-list{
         gap: 48px 24px;
