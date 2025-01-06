@@ -766,9 +766,6 @@ a:hover {
 
 .portfolio-list-item {
   width: 100%;
-  border: 1px solid #A5058E;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
 }
 
 .portfolio-list-item:not(:last-child) {
@@ -800,6 +797,16 @@ a:hover {
 }
 
 .portfolio-list-wrap {
+  padding: 20px 16px;
+  border: 1px solid #e6e6e6;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  color: #111821;
+}
+
+.portfolio-desc-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -809,9 +816,6 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 16px;
-  background-color: #A5058E;
-  color: #fff;
 }
 
 .portfolio-list-title {
@@ -820,6 +824,25 @@ a:hover {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+}
+
+.technologies-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.technologies-title {
+  padding: 4px 8px;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+  color: #260120;
+  font-size: 12px;
+  font-style: italic;
 }
 
 @media screen and (min-width: 768px) {

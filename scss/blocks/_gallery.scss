@@ -32,11 +32,7 @@
 .portfolio-list {
 }
 .portfolio-list-item {
-    width: 100%;
-    border: 1px solid $acsent;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    
+    width: 100%;   
 }
 .portfolio-list-item:not(:last-child){
     margin-bottom: 48px;
@@ -58,13 +54,19 @@
         transform: translateY(-60%);
     }
 }
-.portfolio-list-wrap {
+.portfolio-list-wrap {  
+    padding: 20px 16px;
+    border: 1px solid $border;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+    background-color: $white;
+    color: $black;
+}
+.portfolio-desc-wrap{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
-    background-color: $acsent;
-    color: $white;
 }
 .portfolio-list-title {
     font-weight: 500;
@@ -74,6 +76,23 @@
     margin-bottom: 8px;
 }
 .portfolio-list-desc {
+    
+}
+.technologies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 8px;
+}
+.technologies-item {
+}
+.technologies-title {
+    padding: 4px 8px;
+    border-radius: 8px;
+    background-color: $border;
+    color: $secondary-text;
+    font-size: 12px;
+    font-style: italic;
 }
 @include mediaTablet{
     .portfolio-filter{
