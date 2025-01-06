@@ -214,7 +214,11 @@ a:hover {
 .nav-link {
   color: #706D70;
 }
-.nav-link:hover, .nav-link:focus, .nav-link:active {
+.nav-link:hover, .nav-link:focus {
+  color: #A5058E;
+}
+
+.nav-link.active {
   color: #A5058E;
 }
 

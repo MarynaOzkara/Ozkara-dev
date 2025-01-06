@@ -67,11 +67,13 @@
 .nav-link{
     color: $gray;
 
-    &:hover, &:focus, &:active{
+    &:hover, &:focus{
         color: $acsent;
     }
 }
-
+.nav-link.active{
+    color: $acsent;
+}
 .header-nav {
     display: flex;
     justify-content: space-between;
