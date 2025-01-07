@@ -6,6 +6,7 @@ filterNav.addEventListener("click", (event) => {
 
   let filterClass = event.target.dataset["f"];
   filterCategory.forEach((elem) => {
+    console.log(filterClass);
     elem.classList.remove("hidden");
     if (!elem.classList.contains(filterClass) && filterClass !== "all") {
       elem.classList.add("hidden");
