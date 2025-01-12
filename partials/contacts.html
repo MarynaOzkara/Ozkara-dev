@@ -4,27 +4,39 @@
             <h3 class="contact-title">Contact with me</h3>
         </div>
         <div class="contact-form-wrap">
-            <form class="form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- <form autocomplete="off" id="form" name="form" class="form" action="https://api.web3forms.com/submit" method="POST"> -->
+            <form autocomplete="off" id="form" name="form" class="form">
                 <input type="hidden" name="access_key" value="dfedcb10-a36f-44d9-9825-c8261fc769aa">
                 <div class="input-group">
-                    <input type="text" name="name" autocomplete="off" required>
+                    <input id="name" type="text" name="name" required>
                     <label for="">name*</label>
+                    <span class="error" data-for="name"></span>
+                    <!-- <p id="name-error" class="error disp" name="length">Enter minimum 3 symbols</p> -->
                 </div>
                 <div class="input-group">
-                    <input type="tel" name="phone" autocomplete="off" required>
+                    <input id="phone" type="tel" name="phone" required>
                     <label for="">phone*</label>
+                    <span class="error" data-for="phone"></span>
+                    <!-- <p class="error disp" name="phoneError">Enter the full phone number with country code</p> -->
                 </div>
                 <div class="input-group">
-                    <input type="email" name="email" autocomplete="off" required>
+                    <input id="email" type="email" name="email" required>
                     <label for="">email*</label>
+                    <span class="error" data-for="email"></span>
+                    <!-- <p class="error disp" name="emailError">Enter the valid email</p> -->
                 </div>
                 <div class="input-group">
                     <textarea name="message"></textarea>
-                    <label for="">message</label>
+                    <label for="">message</label>  
                 </div>
-                <input type="checkbox" name="rule" id="checkbox" class="input-checkbox hidden" required>
-                <label for="checkbox" class="check-text"><p>I accept the terms and conditions of the</p> <a href="" class="check-link">Privacy Policy</a></label>
+                    <div>
+                        <input type="checkbox" name="agree" id="agree" class="input-checkbox hidden" required>
+                        <label for="agree" class="check-text"><p>I accept the terms and conditions of the</p> <a href="" class="check-link">Privacy Policy</a></label>
+                    </div>
+                    <span class="error" data-for="agree"></span> 
+                    <!-- <p class="error disp" name="messagelError">You should accept the terms of the Privacy Policy</p> -->
                 <button type="submit" class="contact-form-btn">Send</button>
+                <p class="success disp">Your message successfully sent!</p>
             </form>
         </div>
     
