@@ -1,5 +1,6 @@
 /* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -88,7 +89,7 @@ legend {
 }
 
 body {
-  font-family: "Poppins", serif;
+  font-family: "Raleway", serif;
   font-size: 16px;
   background-color: #F1F1F1;
   color: #111821;
@@ -149,6 +150,7 @@ a:hover {
 
 .logo {
   position: relative;
+  font-family: "Poppins", serif, serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 1;
@@ -184,6 +186,16 @@ a:hover {
 }
 .logo:hover::before {
   width: 90%;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 30px;
 }
 
 .nav-list {
@@ -273,7 +285,7 @@ a:hover {
 }
 
 .hero-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 30px;
   margin-bottom: 20px;
   color: #A5058E;
@@ -329,6 +341,7 @@ a:hover {
 }
 
 .service-card-title {
+  font-family: "Poppins", serif;
   font-weight: 600;
   font-size: 24px;
   margin-top: 30px;
@@ -541,16 +554,19 @@ a:hover {
 }
 
 .policy a {
+  font-family: "Poppins", serif, serif;
   font-size: 12px;
   color: #706D70;
 }
 
 .copy a {
+  font-family: "Poppins", serif, serif;
   font-size: 14px;
   color: #706D70;
 }
 
 .copy {
+  font-family: "Poppins", serif, serif;
   font-size: 14px;
   color: #706D70;
 }
@@ -662,11 +678,10 @@ a:hover {
 .contact-form-btn {
   display: block;
   margin: 0 auto;
-  min-width: 160px;
-  height: 40px;
+  min-width: 200px;
+  height: 48px;
   background-color: #111821;
   border-radius: 30px;
-  border: 2px solid #111821;
   font-size: 18px;
   color: #fff;
   margin-top: 20px;
@@ -675,8 +690,7 @@ a:hover {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form-btn:focus, .contact-form-btn:hover, .contact-form-btn:active {
-  background-color: #fff;
-  color: #111821;
+  background-color: #3f3f3f;
 }
 
 .check-group {
@@ -767,7 +781,7 @@ a:hover {
 .filter-item {
   pointer-events: none;
   cursor: pointer;
-  font-family: "Poppins", serif, sans-serif;
+  font-family: "Poppins", serif, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -789,7 +803,7 @@ a:hover {
 
 .filter-btn {
   display: inline-block;
-  font-family: "Poppins", serif, sans-serif;
+  font-family: "Raleway", serif, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -862,6 +876,7 @@ a:hover {
 }
 
 .portfolio-list-title {
+  font-family: "Poppins", serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -880,6 +895,7 @@ a:hover {
 }
 
 .technologies-title {
+  font-family: "Poppins", serif;
   padding: 4px 8px;
   border-radius: 8px;
   background-color: #e6e6e6;

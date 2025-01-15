@@ -12,7 +12,7 @@
 .filter-item{
     pointer-events: none;
     cursor: pointer;
-    font-family: $font-main, sans-serif;
+    font-family: $font-secondary, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -49,8 +49,7 @@
       background-color: $acsent;
     }
 }
-.portfolio-list {
-}
+
 .portfolio-list-item {
     width: 100%;   
 }
@@ -89,24 +88,23 @@
     justify-content: space-between;
 }
 .portfolio-list-title {
+    font-family: $font-secondary;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
-.portfolio-list-desc {
-    
-}
+
 .technologies-list {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     margin-top: 8px;
 }
-.technologies-item {
-}
+
 .technologies-title {
+    font-family: $font-secondary;
     padding: 4px 8px;
     border-radius: 8px;
     background-color: $border;
