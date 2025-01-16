@@ -3,6 +3,12 @@ import IMask from "imask";
 import JustValidate from "just-validate";
 
 const phoneMask = document.getElementById("phone");
+const success = document.querySelector(".success");
+const errorSend = document.querySelector(".error-message");
+
+const TOKEN = "8132075733:AAHhptqMVWVeF5-M2Mn8QLYQRyU3we2U978";
+const CHAT_ID = "-4721378155";
+const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 IMask(phoneMask, { mask: "+000000000000000" });
 
@@ -20,7 +26,12 @@ validate
     {
       rule: "minLength",
       value: 3,
-      errorMessage: "Enter minimum 3 symbols",
+      errorMessage: "Name must be at least 3 characters",
+    },
+    {
+      rule: "maxLength",
+      value: 20,
+      errorMessage: "Name can't be more then 20 characters",
     },
   ])
   .addField("#phone", [
@@ -30,7 +41,7 @@ validate
     },
     {
       rule: "minLength",
-      value: 8,
+      value: 10,
       errorMessage: "Enter the full phone number with country code",
     },
   ])
@@ -49,4 +60,43 @@ validate
       errorMessage: "You should accept the terms of the Privacy Policy",
     },
   ])
-  .onSuccess();
+  .onSuccess((event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = {
+      name: formData.get("name"),
+      phone: formData.get("phone"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    // Відправляємо дані до Telegram
+    sendToTelegram(data);
+  });
+
+// Функція для відправки даних до Telegram
+function sendToTelegram(data) {
+  const message = `
+    📝 <b>Нова заявка з сайту - Ozkara-dev:</b>
+    - <b>Name:</b> ${data.name}
+    - <b>Phone:</b> ${data.phone}
+    - <b>Email:</b> ${data.email}
+    - <b>Message:</b> ${data.message}
+  `;
+
+  axios
+    .post(URL_API, {
+      chat_id: CHAT_ID,
+      parse_mode: "html",
+      text: message,
+    })
+    .then((res) => {
+      success.classList.remove("disp");
+      console.log(res);
+      form.reset();
+    })
+    .catch((err) => {
+      errorSend.classList.remove("disp");
+      console.warn(err);
+    });
+}

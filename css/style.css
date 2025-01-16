@@ -251,6 +251,23 @@ a:hover {
   z-index: 1;
 }
 
+.change-lang {
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.change-lang:active, .change-lang:focus {
+  color: #A5058E;
+}
+
+.lang-option {
+  border: 0;
+}
+
 @media screen and (min-width: 768px) {
   .mob-nav-btn {
     display: none;
@@ -613,8 +630,8 @@ a:hover {
 
 .input-group input {
   min-width: 100%;
-  border: 1px solid #A5058E;
   height: 40px;
+  font-family: "Poppins", serif;
   font-size: 16px;
   padding: 0 10px;
   color: #fff;
@@ -630,9 +647,9 @@ a:hover {
 }
 
 .input-group textarea {
-  border: 1px solid #A5058E;
   width: 100%;
   height: 120px;
+  font-family: "Poppins", serif;
   font-size: 16px;
   padding: 0 10px;
   color: #fff;
@@ -672,7 +689,7 @@ a:hover {
 }
 
 .just-validate-error-field {
-  color: red;
+  border-color: red;
 }
 
 .contact-form-btn {
@@ -731,12 +748,16 @@ a:hover {
   color: #fff;
   margin-left: 4px;
 }
-
 .check-link:hover, .check-link:focus {
   color: #111821;
 }
 
 .success {
+  font-size: 18px;
+  color: #fff;
+}
+
+.error-message {
   font-size: 18px;
   color: #fff;
 }

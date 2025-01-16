@@ -1,7 +1,7 @@
 <section class="contact">
     <div class="container">
         <div class="contact-content">
-            <h3 class="contact-title">Contact with me</h3>
+            <h3 class="contact-title" data-i18n="pages.contact.title">Contact with me</h3>
         </div>
         <div class="contact-form-wrap">
             <!-- <form autocomplete="off" id="form" name="form" class="form" action="https://api.web3forms.com/submit" method="POST"> -->
@@ -9,13 +9,13 @@
                 <input type="hidden" name="access_key" value="dfedcb10-a36f-44d9-9825-c8261fc769aa">
                 <div class="input-group">
                     <input id="name" type="text" name="name" required>
-                    <label for="">name*</label>
+                    <label for="" data-i18n="pages.contact.name">name*</label>
                     <span class="error" data-for="name"></span>
                     
                 </div>
                 <div class="input-group">
                     <input id="phone" type="tel" name="phone" required>
-                    <label for="">phone*</label>
+                    <label for="" data-i18n="pages.contact.phone">phone*</label>
                     <span class="error" data-for="phone"></span>
                     
                 </div>
@@ -27,16 +27,17 @@
                 </div>
                 <div class="input-group">
                     <textarea name="message"></textarea>
-                    <label for="">message</label>  
+                    <label for="" data-i18n="pages.contact.message">message</label>  
                 </div>
                     <div>
                         <input type="checkbox" name="agree" id="agree" class="input-checkbox hidden" required>
-                        <label for="agree" class="check-text"><p>I accept the terms and conditions of the</p> <a href="" class="check-link">Privacy Policy</a></label>
+                        <label for="agree" class="check-text"><p data-i18n="pages.contact.terms">I accept the terms and conditions of the</p> <a href="" class="check-link">Privacy Policy</a></label>
                     </div>
                     <span class="error" data-for="agree"></span> 
                     
-                <button type="submit" class="contact-form-btn">Send</button>
-                <p class="success disp">Your message successfully sent!</p>
+                <button type="submit" class="contact-form-btn" data-i18n="pages.contact.btn">Send</button>
+                <p class="success disp" data-i18n="pages.contact.success">Your message successfully sent!</p>
+                <p class="error-message disp" data-i18n="pages.contact.error">Something went wrong. Try again later</p>
             </form>
         </div>
     

@@ -89,6 +89,24 @@
     display: block;
     z-index: 1;
 }
+.change-lang{
+    // appearance: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+  
+    
+}
+.change-lang:active, .change-lang:focus{
+    color: $acsent;
+}
+
+.lang-option{
+    border: 0;
+}
 
 @include mediaTablet{
    
