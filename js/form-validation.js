@@ -5,10 +5,9 @@ import JustValidate from "just-validate";
 const phoneMask = document.getElementById("phone");
 const success = document.querySelector(".success");
 const errorSend = document.querySelector(".error-message");
+const { VITE_CHAT_ID, VITE_TOKEN } = import.meta.env;
 
-const TOKEN = "8132075733:AAHhptqMVWVeF5-M2Mn8QLYQRyU3we2U978";
-const CHAT_ID = "-4721378155";
-const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+const URL_API = `https://api.telegram.org/bot${VITE_TOKEN}/sendMessage`;
 
 IMask(phoneMask, { mask: "+000000000000000" });
 
@@ -86,7 +85,7 @@ function sendToTelegram(data) {
 
   axios
     .post(URL_API, {
-      chat_id: CHAT_ID,
+      chat_id: VITE_CHAT_ID,
       parse_mode: "html",
       text: message,
     })
