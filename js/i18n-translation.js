@@ -5,7 +5,7 @@ const i18n = new I18n(translations);
 let currentLang = localStorage.getItem("language") || "en";
 i18n.locale = currentLang;
 
-console.log(currentLang);
+// console.log(currentLang);
 const select = document.querySelector("select");
 
 function translatePage() {

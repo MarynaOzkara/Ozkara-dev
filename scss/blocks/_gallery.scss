@@ -31,14 +31,13 @@
     background-color: $acsent;
 }
 .filter-btn {
+    cursor: pointer;
     display: inline-block;
-    font-family: $font-main, sans-serif;
+    font-family: $font-secondary, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
     text-align: center;
-    letter-spacing: 0.04em;
     color: $white;
     background-color: $black;
     border-radius: 10px;
@@ -48,6 +47,23 @@
     &:hover, &:focus, &:active{
       background-color: $acsent;
     }
+}
+.hide{
+    opacity: 1;
+    animation-name: a1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes a1 {
+    to{
+        opacity: 0;
+        height: 0;
+        width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+    
 }
 
 .portfolio-list-item {

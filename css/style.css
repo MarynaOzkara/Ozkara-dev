@@ -825,14 +825,13 @@ a:hover {
 }
 
 .filter-btn {
+  cursor: pointer;
   display: inline-block;
-  font-family: "Raleway", serif, sans-serif;
+  font-family: "Poppins", serif, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.04em;
   color: #fff;
   background-color: #111821;
   border-radius: 10px;
@@ -844,6 +843,37 @@ a:hover {
   background-color: #A5058E;
 }
 
+.hide {
+  opacity: 1;
+  -webkit-animation-name: a1;
+          animation-name: a1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes a1 {
+  to {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+
+@keyframes a1 {
+  to {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
 .portfolio-list-item {
   width: 100%;
 }
