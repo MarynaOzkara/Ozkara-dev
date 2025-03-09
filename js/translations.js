@@ -27,9 +27,9 @@ const translations = {
         portfolio: {
           title: "Portfolio",
           projects: {
-            pjc1: "Web-studio company with  adptive layout",
+            pjc1: "Web-studio company with  adaptive layout",
             pjc2: "Responsive web site of Watches company",
-            pjc3: "Site of healthy food resipes with categories",
+            pjc3: "Site of healthy food recipes with categories",
           },
           btn: "All projects",
         },
