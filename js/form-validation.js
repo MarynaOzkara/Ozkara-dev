@@ -13,7 +13,7 @@ IMask(phoneMask, { mask: "+000000000000000" });
 
 const validate = new JustValidate("#form", {
   errorLabelStyle: {
-    color: "white",
+    color: "red",
   },
 });
 validate
